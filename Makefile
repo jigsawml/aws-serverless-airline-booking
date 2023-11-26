@@ -15,7 +15,7 @@ target:
 	@exit 0
 
 init: ##=> Install OS deps and dev tools
-	$(info [*] Bootstrapping CI system...)
+	$(info [*] Bootstrapping CI system....)
 	@$(MAKE) _install_os_packages
 
 deploy: ##=> Deploy services
