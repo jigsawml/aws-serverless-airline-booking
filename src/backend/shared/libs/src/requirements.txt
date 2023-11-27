@@ -1,4 +1,4 @@
 aws-lambda-powertools==1.0.1
 boto3==1.14.16
-urllib3==2.1.0
 requests==2.31.0
+urllib3<2.0
