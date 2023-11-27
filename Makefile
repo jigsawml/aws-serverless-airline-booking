@@ -83,6 +83,7 @@ _install_os_packages:
 	$(info [*] Upgrading Python SAM CLI and CloudFormation linter to the latest version...)
 	yum install openssl11 -y
 	python3 -m pip install --upgrade --user cfn-lint aws-sam-cli
+	python3 -m pip install --upgrade urllib3==1.26.15
 	npm -g install aws-cdk
 
 define HELP_MESSAGE
