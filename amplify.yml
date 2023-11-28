@@ -55,8 +55,8 @@ frontend:
     preBuild:
       commands:
         - cd src/frontend
-        - nvm uninstall 16.19.0
         - nvm install 18.0.0
+        - nvm use 18.0.0
         - test -f aws-exports.js && cat aws-exports.js
         - yarn
         ## 
