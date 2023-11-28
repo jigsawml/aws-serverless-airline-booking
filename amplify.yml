@@ -4,11 +4,6 @@ frontend:
     preBuild:
       commands:
         - cd src/frontend
-        - yum update glibc -y
-        - nvm install 18.0.0
-        - nvm use 18.0.0
-        - npm install -g npm@latest
-        - npm install
         - test -f aws-exports.js && cat aws-exports.js
         - yarn
         ## 
