@@ -4,7 +4,6 @@ frontend:
     preBuild:
       commands:
         - cd src/frontend
-        - ldd -v
         - yum update glibc -y
         - nvm install 18.0.0
         - nvm use 18.0.0
