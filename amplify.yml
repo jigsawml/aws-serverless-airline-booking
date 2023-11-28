@@ -4,7 +4,7 @@ frontend:
     preBuild:
       commands:
         - cd src/frontend
-        - test -f aws-exports.js && cat aws-exports.js
+        # - test -f aws-exports.js && cat aws-exports.js
         - yarn
         ## 
         # Expose Stripe public key and Payment Charge URL as a VueJS runtime env
